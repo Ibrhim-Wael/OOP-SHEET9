@@ -27,6 +27,7 @@ public:
 class Car : public Vehicle {
 private:
     double mileage; 
+    float fuelEfficiency;
 public:
     
     Car(string b, double fuel, double m) : Vehicle(b, fuel), mileage(m) {}
@@ -38,7 +39,7 @@ public:
     }
 
     double calculateFuelEfficiency() const override {
-        return mileage; 
+        return (mileage+(mileage*fuelEfficiency)); 
     }
 
     void vehicleType() const {
@@ -49,6 +50,7 @@ public:
 
 class Truck : public Vehicle {
 private:
+    double mileage;
     double loadCapacity; 
     double fuelEfficiency; 
 public:
@@ -61,7 +63,7 @@ public:
     }
 
     double calculateFuelEfficiency() const override {
-        return fuelEfficiency; // in km/l
+        return (mileage+(mileage*fuelEfficiency));
     }
     void vehicleType() const {
         cout << "This is a Truck." << endl;
