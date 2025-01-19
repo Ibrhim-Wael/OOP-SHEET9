@@ -9,7 +9,7 @@ public:
     virtual double perimeter() const { return 0.0; }
 
     virtual void display() const {
-        cout << "Base class display function." << std::endl;
+        cout << "Base class display function." << endl;
     }
 };
 
@@ -28,7 +28,7 @@ public:
     }
 
     void display()  {
-        cout << "This is a Circle." << std::endl;
+        cout << "This is a Circle." << endl;
     }
 };
 
@@ -48,7 +48,7 @@ public:
     }
     
     void display() const {
-        cout << "This is a Rectangle." << std::endl;
+        cout << "This is a Rectangle." <<endl;
     }
 };
 
@@ -70,7 +70,7 @@ public:
     }
 
     void display() const {
-     cout << "This is a Triangle." << std::endl;
+     cout << "This is a Triangle." <<endl;
     }
 };
 
